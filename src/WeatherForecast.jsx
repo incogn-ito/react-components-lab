@@ -4,7 +4,7 @@ function WeatherForecast(props) {
     return ( 
         <section className="weather">
             {props.weatherForecasts.map((forecast) => (
-                <div key={forecast._id}>
+                <div key={forecast._id} className="weather-item">
                     <h2>{forecast.day}</h2>
                     <img src={forecast.img} alt={forecast.imgAlt} />
                     <p><span>Conditions: </span>{forecast.conditions}</p>

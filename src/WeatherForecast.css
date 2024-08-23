@@ -13,3 +13,10 @@ section {
     font-weight: bold;
   }
   
+  .weather-item {
+    border: 1px solid #ccc; /* Apply border to each item */
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+   /* Optional: Adds spacing between the boxes */
+}
