@@ -2,7 +2,7 @@ import './WeatherForecast.css';
 
 function WeatherForecast(props) {
     return ( 
-        <div className="weather">
+        <section className="weather">
             {props.weatherForecasts.map((forecast) => (
                 <div key={forecast._id}>
                     <h2>{forecast.day}</h2>
@@ -11,7 +11,7 @@ function WeatherForecast(props) {
                     <p><span>Time: </span>{forecast.time}</p>
                 </div>
             ))}
-        </div>
+        </section>
     );
 }
 export default WeatherForecast
